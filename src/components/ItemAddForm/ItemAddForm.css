@@ -1,0 +1,9 @@
+.item-add-form {
+  margin-top: 5px;
+  display: flex;
+}
+
+.item-add-form .btn {
+  flex-shrink: 0;
+  margin-left: 5px;
+}

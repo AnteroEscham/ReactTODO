@@ -1,0 +1,7 @@
+.search-panel {
+  width: auto;
+  flex-grow: 1;
+  margin-right: 3px;
+  margin-bottom: 5px;
+  padding: 5px;
+}
