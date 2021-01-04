@@ -2,7 +2,7 @@ import React from 'react';
 import './TodoListItem.css';
 
 const TodoListItem = (props) => {
-  const {label, important, done, onDeleted, onToggleImportant, onToggleDone} = props;
+  const {label, important, done, hide, onDeleted, onToggleImportant, onToggleDone} = props;
   let classNames = 'todo-list-item';
   
   if (done) {
@@ -11,6 +11,10 @@ const TodoListItem = (props) => {
 
   if (important) {
     classNames += ' important';
+  }
+
+  if (hide) {
+    classNames += ' hide';
   }
 
   return (

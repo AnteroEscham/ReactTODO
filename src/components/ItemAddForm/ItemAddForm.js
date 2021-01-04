@@ -12,12 +12,13 @@ export default class ItemAddForm extends Component {
 
     this.onLabelChange = event => {
       this.setState({
-        label: event.target.value.toUpperCase(),
+        label: event.target.value,
       });
     }
 
     this.onSubmit = event => {
       event.preventDefault();
+      if (!this.state.label.length) return;
       this.props.onItemAdded(this.state.label);
       this.setState({
         label: '',

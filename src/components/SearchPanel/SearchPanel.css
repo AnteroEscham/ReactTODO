@@ -3,5 +3,10 @@
   flex-grow: 1;
   margin-right: 3px;
   margin-bottom: 5px;
+}
+
+.search-panel .form-control {
+  width: 100%;
+  height: 100%;
   padding: 5px;
 }
